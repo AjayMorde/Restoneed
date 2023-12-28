@@ -1,0 +1,42 @@
+
+  .home-section{
+    margin: 120px 0px 0px 120px;
+  }
+  .home-wel p {
+    margin: 0;
+    font-size: 3rem; 
+    font-weight: bold;
+    
+  }
+  
+  .home-wel-heading {
+    margin-left: 10px; 
+    font-size: 4rem; 
+    font-weight: bold;
+    color: green; 
+  }
+  .head{
+    font-size: 40px; 
+    font-weight: bold;
+   
+  }
+  .head1{
+    color: #088178;
+    font-size: 40px; 
+    font-weight: bold;
+  }
+  
+
+  @media (max-width: 520px) {
+    .home-wel {
+      text-align: center;
+    }
+  
+    .head {
+      font-size: 24px;
+    }
+  
+    .head1 {
+      font-size: 16px;
+    }
+  }
