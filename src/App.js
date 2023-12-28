@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Home from './pages/Home';
 import Services from './pages/Services';
-import NotFound from './pages/NotFound';
+
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <Route path="/services" element={<Services/>} />
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/contact" element={<Contact/>} />
-      <Route element={NotFound} /> 
+      
       </Routes>
     </BrowserRouter>
     </div>
