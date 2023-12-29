@@ -28,15 +28,22 @@
   
 
   @media (max-width: 520px) {
-    .home-wel {
-      text-align: center;
+    .home-section {
+      margin: 40px 25px; 
+    }
+  
+    .home-wel p {
+      font-size: 2.5rem; 
+    }
+  
+    .home-wel-heading {
+      font-size: 3.1rem; 
     }
   
     .head {
-      font-size: 24px;
+      font-size: 3rem; 
     }
-  
-    .head1 {
-      font-size: 16px;
+    .head1{
+        font-size: 2.6rem; 
     }
   }
