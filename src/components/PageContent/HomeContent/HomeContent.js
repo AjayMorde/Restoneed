@@ -4,6 +4,8 @@ import img2 from '../../../images/din.png'
 import img3 from '../../../images/RestoSol/res1.jpg'
 import img4 from '../../../images/RestoSol/res2.jpeg'
 import img6 from '../../../images/RestoSol/res3.jpeg'
+import img7 from '../../../images/RestoSol/join.png'
+import img8 from '../../../images/RestoSol/join2.jpeg'
 import './HomeContent.css'
 import HomeFeatures from './HomeFeatures'
 
@@ -55,6 +57,8 @@ const HomeContent = () => {
 
 
             </section>
+
+
             <HomeFeatures />
 
             <section className='home-section3'>
@@ -66,7 +70,7 @@ const HomeContent = () => {
 
                     <p>We have solutions for different restaurants. We make things easy for singlebr
                         <br />
-                    restaurants or big chains. Check out how we can help your restaurant.</p>
+                        restaurants or big chains. Check out how we can help your restaurant.</p>
                 </div>
 
                 <p>Scan the menu effortlessly, then place orders for your favorites with ease</p>
@@ -90,6 +94,41 @@ const HomeContent = () => {
 
 
             </section>
+
+            <h2 className='letsstart'>#Let's Begin Together</h2>
+            <section className="home-section4">
+                
+                <div className="home-section4-box">
+                    <div className="home-section4-img">
+                        <img src={img7} alt="join-us" />
+                    </div>
+                    <div class="home-section4-details">
+                        <h4>Discover the power of this cutting-edge technology.</h4>
+                        <p>Lets try fist ,Understand how it works, then  <br /> become our first member after<br />experiencing the scanner firsthand ...
+                        </p>
+                        <a href=" #"> CONTINUE READING</a>
+                    </div>
+                    <h1> Restoneed </h1>
+                </div>
+
+                <div className="home-section4-box">
+                    <div className="home-section4-img">
+                        <img src={img8}  alt="join-us" />
+                    </div>
+                    <div class="home-section4-details">
+                        <h4>Let's initiate the Scanner cycle from either end.</h4>
+                        <p>Together, we put in the effort to make your table a special <br /> stage for a delightful food experience
+                        From selecting fresh ingredients to making ordering a breeze <br />we aim to make every visit easy and delightful....
+                        </p>
+                        <a href=" #"> CONTINUE READING</a>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+
+
 
 
 
