@@ -27,6 +27,8 @@ const HomeContent = () => {
                 </div>
             </section>
 
+            <hr />
+
             <section className='home-section1'>
                 <div className="img2">
                     <img src={img2} alt="img2s" />
@@ -36,9 +38,12 @@ const HomeContent = () => {
                     <h1>Restoneeds Effortless Table Ordering</h1>
 
                     <p>
-                        Welcome to Restroneeds! Here, tables turn into canvases, and every meal is a tasty masterpiece.Restroneeds is more than just a spot to eat; it's a journey of flavors and a cheerful celebration of good food. <br /> <br />
-                        Our story :kicked off because we love bringing folks together through the joy of delicious meals – making it simple and enjoyable for everyone.  <br /><br />
-                        Our team is a mix of food enthusiasts and tech lovers. Together, we put in the effort to make your table a special stage for a delightful food experience. From selecting fresh ingredients to making ordering a breeze, we aim to make every visit easy and delightful. <br /><br />
+                        Welcome to Restroneeds! Here, tables turn into canvases, and every meal is a tasty masterpiece.Restroneeds is more than just a spot to eat; it's a journey of flavors and a cheerful celebration of good food. 
+                        <br /> <br />
+                        Our story :kicked off because we love bringing folks together through the joy of delicious meals – making it simple and enjoyable for everyone.  
+                        <br /><br />
+                        Our team is a mix of food enthusiasts and tech lovers. Together, we put in the effort to make your table a special stage for a delightful food experience. From selecting fresh ingredients to making ordering a breeze, we aim to make every visit easy and delightful.
+                         <br /><br />
                         Our Vision:
                         Join us in dreaming of a world where every meal is like a flavor fiesta. Picture a place where technology makes things better, yet the simple joy of savoring tasty moments with friends and family remains at the heart of it all.
 
