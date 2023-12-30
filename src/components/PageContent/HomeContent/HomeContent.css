@@ -261,43 +261,21 @@ hr {
     width: 50%;
 }
 
-.home-section4 .home-section4-details a{
-    text-decoration: none;
-    font-size: 11px;
-    color: .000;
+.home-section4 .home-section4-details span{
+    
+    font-size: 16px;
+    
     font-weight: 700;
-    position: relative;
-    transition: 0.3s
+
     
 }
-.home-section4 .home-section4-details a::after{
-    content: "";
-    width: 50px;
-    height: 1px;
-    background-color: black;
-    font-weight: 700;
-    position: absolute;
-    top: 4px;
-    right: -60px;
-    
-}
+
 .home-section4{
   font-size: 20px;
     color: #222;
 }
-.home-section4 .home-section4-details  a:hover{
-    color: blue;
-}
-.home-section4 .home-section4-box  h1 {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    font-size: 70px;
-    font-weight: 700;
-    color: #c9cbce;
-    z-index: -5;
 
-  }
+
   .letsstart{
    
       font-size: 40px;
