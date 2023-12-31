@@ -436,34 +436,32 @@ hr {
     width: 100%;
 }
 
+
 .home-section5 {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  transform: none;
+  margin-top: 20px;
 }
 
 .home-section5 form {
-  width: 100%; 
-  
-  
+  width: 100%;
+  height: auto;
 }
 
 .home-section5 form input,
-.home-section5 form select {
-  width: 100%; 
-  margin-bottom: 10px; 
-}
-
+.home-section5 form select,
 .home-section5 form button {
-  width: 100%; 
-  margin-top: 10px; 
+  width: 100%;
+  margin-bottom: 10px;
+}
+.home-section5 img{
+  display: none;
 }
 
-.home-section5 .img img{
-display: none;
+.g-recaptcha {
+  width: 100%;
 }
-
-
 
 
 }

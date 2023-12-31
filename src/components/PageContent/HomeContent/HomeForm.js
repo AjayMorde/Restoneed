@@ -118,7 +118,7 @@ const HomeForm = () => {
                         <br /> <br />
 
                         <ReCAPTCHA
-                        className="capcha"
+                        
                            sitekey="6LfXmEEpAAAAAI5trHR57Fde-9BabKsmGdIAr69f"
                            onChange={onChange}
                         />,   
