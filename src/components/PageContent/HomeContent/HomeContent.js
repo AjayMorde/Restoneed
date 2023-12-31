@@ -8,8 +8,8 @@ import img7 from '../../../images/RestoSol/join.png'
 import img8 from '../../../images/RestoSol/join2.jpeg'
 import './HomeContent.css'
 import HomeFeatures from './HomeFeatures'
-
 import './HomeContent.css'
+import HomeForm from './HomeForm'
 
 const HomeContent = () => {
     return (
@@ -106,7 +106,7 @@ const HomeContent = () => {
                         <h4>Discover the power of this cutting-edge technology.</h4>
                         <p>Lets try fist ,Understand how it works, then  <br /> become our first member after<br />experiencing the scanner firsthand  <span style={{color:"blue",cursor:"pointer"}}> read more...</span>
                         </p>
-                        <h1>RESTONEED</h1>
+                        
                        
                     </div>
                   
@@ -128,7 +128,10 @@ const HomeContent = () => {
                 </div>
 
             </section>
+              
+               
 
+             <HomeForm></HomeForm>
 
 
 
