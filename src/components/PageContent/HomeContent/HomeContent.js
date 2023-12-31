@@ -128,6 +128,9 @@ const HomeContent = () => {
                 </div>
 
             </section>
+            <hr />
+
+            
               
                
 
