@@ -97,44 +97,63 @@ const HomeContent = () => {
 
             <h2 className='letsstart'>#Let's Begin Together</h2>
             <section className="home-section4">
-                
+
                 <div className="home-section4-box">
                     <div className="home-section4-img">
                         <img src={img7} alt="join-us" />
                     </div>
                     <div class="home-section4-details">
                         <h4>Discover the power of this cutting-edge technology.</h4>
-                        <p>Lets try fist ,Understand how it works, then  <br /> become our first member after<br />experiencing the scanner firsthand  <span style={{color:"blue",cursor:"pointer"}}> read more...</span>
+                        <p>Lets try fist ,Understand how it works, then  <br /> become our first member after<br />experiencing the scanner firsthand  <span style={{ color: "blue", cursor: "pointer" }}> read more...</span>
                         </p>
-                        
-                       
+
+
                     </div>
-                  
+
                 </div>
 
                 <div className="home-section4-box">
                     <div className="home-section4-img">
-                        <img src={img8}  alt="join-us" />
+                        <img src={img8} alt="join-us" />
                     </div>
                     <div class="home-section4-details">
                         <h4>Let's initiate the Scanner cycle from either end.</h4>
                         <p>Together, we put in the effort to make your table a special <br /> stage for a delightful food experience
-                        From selecting fresh ingredients to making ordering a breeze <br />we aim to make every visit easy and delightful
-                        <span style={{color:"blue",cursor:"pointer"}}> read more...</span>
+                            From selecting fresh ingredients to making ordering a breeze <br />we aim to make every visit easy and delightful
+                            <span style={{ color: "blue", cursor: "pointer" }}> read more...</span>
                         </p>
-                       
+
                     </div>
-                    
+
                 </div>
 
             </section>
             <hr />
 
-            
-              
-               
 
-             <HomeForm></HomeForm>
+
+
+
+            <HomeForm></HomeForm>
+
+            
+
+            <section className="home-section6">
+                <div className="newstext">
+                    <h4>
+                    Initiate Your journey with RestoNeed
+                    </h4>
+                    <p>
+                    Let's arrange a time for a  <span>quick call.</span>
+                    </p>
+
+                </div>
+                <div className="form">
+                    <input type="tel" placeholder="+91" />
+                    <button className="normal">Send now</button>
+                </div>
+            </section>
+
 
 
 

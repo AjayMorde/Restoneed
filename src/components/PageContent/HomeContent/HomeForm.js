@@ -46,6 +46,7 @@ const HomeForm = () => {
                     <form >
                         <input type="text"
                             placeholder='Restaurent Name'
+
                             id='restaurantName'
                             required
                         />
@@ -54,7 +55,7 @@ const HomeForm = () => {
 
                         <input type="text"
                             placeholder='Restaurent Manager Name'
-                            id=''
+                            id='ManagerName'
                             required
 
 
