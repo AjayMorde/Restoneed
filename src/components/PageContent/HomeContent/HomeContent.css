@@ -287,16 +287,46 @@ hr {
     
   
   }
+  .home-section5 {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transform: translate(20px, -20px)
+   
+   
+}
 
+.home-section5 form {
+    width: 500px;
+    height: 550px;
+    border: solid 1px;
+    padding: 20px;
+    background-color: #fddde4;
+}
 
-  .home-section5{
+.home-section5 form input,
+.home-section5 form select {
+    padding: 5px;
+    width: 420px;
+    height: 38px;
+    border: 0.5px solid rgb(83, 22, 22); 
+}
 
-
+.home-section5 form button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 25px;
+    background-color: rgb(75, 189, 75);
+    color: white;
     
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+ 
+   
+} 
 
-
-
-  }
 
   
 
@@ -405,7 +435,34 @@ hr {
 .home-section4 .home-section4-details{
     width: 100%;
 }
+
+.home-section5 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section5 form {
+  width: 100%; 
   
+  
+}
+
+.home-section5 form input,
+.home-section5 form select {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+.home-section5 form button {
+  width: 100%; 
+  margin-top: 10px; 
+}
+
+.home-section5 .img img{
+display: none;
+}
+
 
 
 
