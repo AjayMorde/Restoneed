@@ -303,7 +303,7 @@ hr {
     height: 550px;
     border: solid 1px;
     padding: 20px;
-    background-color: #fddde4;
+    background-color: #808080
 }
 
 .home-section5 form input,
@@ -553,32 +553,34 @@ hr {
 }
 
 .home-section6 {
-  padding: 20px; /* Adjust padding for smaller screens */
-  background-position: center; /* Center the background image */
-  text-align: center; /* Center align text */
+  padding: 20px; 
+  background-position: center; 
+  text-align: center; 
+  width: 90%;
+  margin-left: 10px;
 }
 
 .home-section6 h4 {
-  font-size: 16px; /* Adjust heading font size */
+  font-size: 16px; 
 }
 
 .home-section6 p {
-  font-size: 12px; /* Adjust paragraph font size */
+  font-size: 12px; 
 }
 
 .home-section6 input {
-  height: 36px; /* Adjust input height */
-  font-size: 12px; /* Adjust input font size */
+  height: 36px; 
+  font-size: 12px; 
 }
 
 .home-section6 button {
-  padding: 8px 16px; /* Adjust button padding */
-  font-size: 12px; /* Adjust button font size */
+  padding: 8px 16px; 
+  font-size: 12px; 
 }
 
 .home-section6 .form {
-  width: 100%; /* Occupy full width */
-  margin-top: 10px; /* Add some top margin */
+  width: 100%; 
+  margin-top: 10px; 
 }
 
 
