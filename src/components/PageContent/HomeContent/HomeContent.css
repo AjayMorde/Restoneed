@@ -303,7 +303,8 @@ hr {
     height: 550px;
     border: solid 1px;
     padding: 20px;
-    background-color: #808080
+    background-color: #808080;
+    margin-left: 10px;
 }
 
 .home-section5 form input,
@@ -556,7 +557,7 @@ hr {
   padding: 20px; 
   background-position: center; 
   text-align: center; 
-  width: 90%;
+  width: 95%;
   margin-left: 10px;
 }
 
