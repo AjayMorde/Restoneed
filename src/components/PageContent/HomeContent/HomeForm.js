@@ -2,52 +2,77 @@ import ReCAPTCHA from "react-google-recaptcha";
 import React from 'react'
 import { useState } from 'react';
 import cont1 from '../../../images/ContactUs/cont2.jpg'
+import axios from 'axios';
 
-const onChange=()=>{
+// const onChange = () => {
 
-}
+// }
 
 const HomeForm = () => {
 
-    const [selectedCountry, setSelectedCountry] = useState({
-        code: '+91',
-        name: 'India'
-    });
 
-    const handleCountryChange = (e) => {
-        const selectedOption = e.target.value.split(',');
-        setSelectedCountry({
-            code: selectedOption[0],
-            name: selectedOption[1],
-        });
-    };
+    const [user, setUser] = useState({
 
+        restaurentname: "",
+        managername:"",
+        countrycode:"",
+        mobilenumber:"",
+        state:"",
+        city:"",
+        address:""
+    })
+        const handleInput = (e) => {
+        let name = e.target.name
+        // console.log("names",name)
+        let value = e.target.value
+        // console.log("value",value)
+      
 
+        setUser({
+            ...user,
+             [name]: value
+        })
 
-    const countryOptions = [
-        { code: '+91', name: 'India' },
+    }
 
-        { code: '+1', name: 'United States' },
-        { code: '+44', name: 'United Kingdom' },
+    const handleSubmit= async (e)=>{
+        e.preventDefault();
+        console.log(user)
 
-    ];
-    return (
+        try {
+            const response = await axios.post('http://localhost:4000/submit-form', user);
+            
+            if (response.status === 200) {
+                console.log('form data submitted successfully!');
+                // Reset form fields or handle success
+            } else {
+                console.error('failed to submit form data');
+            }
+        } catch (error) {
+            console.error('error submitting form data:', error);
+        }
+        
+        
+    }
+  return (
 
         <>
 
-             <h1 style={{textAlign:'center',marginBottom:'80px', fontSize:'40px'}}>
-             Let's Begin with a Demo
-             </h1>
+            <h1 style={{ textAlign: 'center', marginBottom: '80px', fontSize: '40px' }}>
+                Let's Begin with a Demo
+            </h1>
             <div className="home-section5">
 
                 <div className='form1'>
 
-                    
-                    <form >
+
+                    <form  >
                         <input type="text"
                             placeholder='Restaurent Name'
-
-                            id='restaurantName'
+                            name='restaurentname'
+                            id='restaurantname'
+                            value={user.restaurentname}
+                            onChange={handleInput}
                             required
                         />
 
@@ -55,7 +80,10 @@ const HomeForm = () => {
 
                         <input type="text"
                             placeholder='Restaurent Manager Name'
-                            id='ManagerName'
+                            name='managername'
+                            id='managername'
+                            value={user.managername}
+                            onChange={handleInput}
                             required
 
 
@@ -63,26 +91,33 @@ const HomeForm = () => {
 
                         <br /> <br />
 
-                        <select
-                            id="countryCode"
-                            name="countryCode"
-                            value={`${selectedCountry.code},${selectedCountry.name}`}
+                        <select 
+                            
+                            id="countrySelect"
+                            name="countrycode"
+                            value={user.countrycode}
+                            onChange={handleInput}
+                            >
+                           
+                            <option value="India">+91 India</option>
+                            <option value="USA">+44 Uk</option>
+                            <option value="Canada">USA +1</option>
+                            
 
-                            onChange={handleCountryChange}
-                        >
-                            {countryOptions.map((country, index) => (
-                                <option key={index} value={`${country.code},${country.name}`}>
-                                    {`${country.name} (${country.code})`}
-                                </option>
-                            ))}
+                           
+                         
                         </select>
+
+
                         <br /> <br />
 
                         <input
                             type="tel"
-                            id="mobileNumber"
-                            name="mobileNumber"
+                            id="mobilenumber"
+                            name="mobilenumber"
                             pattern="[+]91[0-9]{8}"
+                            value={user.mobilenumber}
+                            onChange={handleInput}
                             placeholder="Manager Mobile Number"
                             required
                         />
@@ -93,7 +128,10 @@ const HomeForm = () => {
 
                         <input type="text"
                             placeholder='Enter State'
-                            id=''
+                            id='state'
+                            name="state"
+                            value={user.state}
+                            onChange={handleInput}
                             required
 
 
@@ -102,7 +140,10 @@ const HomeForm = () => {
 
                         <input type="text"
                             placeholder='Enter City'
-                            id=''
+                            id='city'
+                            name='city'
+                            value={user.city}
+                            onChange={handleInput}
                             required
 
 
@@ -111,7 +152,10 @@ const HomeForm = () => {
 
                         <input type="text"
                             placeholder='Enter Address'
-                            id=''
+                            id='address'
+                            name='address'
+                            value={user.address}
+                            onChange={handleInput}
                             required
 
 
@@ -119,14 +163,14 @@ const HomeForm = () => {
                         <br /> <br />
 
                         <ReCAPTCHA
-                        
-                           sitekey="6LfXmEEpAAAAAI5trHR57Fde-9BabKsmGdIAr69f"
-                           onChange={onChange}
-                        />,   
+
+                            sitekey="6LfXmEEpAAAAAI5trHR57Fde-9BabKsmGdIAr69f"
+                            
+                        />,
 
                         <br /> <br />
 
-                        <button>Submit</button>
+                        <button onClick={handleSubmit}>Submit</button>
 
 
 

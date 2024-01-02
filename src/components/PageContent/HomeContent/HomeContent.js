@@ -10,6 +10,7 @@ import './HomeContent.css'
 import HomeFeatures from './HomeFeatures'
 import './HomeContent.css'
 import HomeForm from './HomeForm'
+import Footer from '../../Footer/footer'
 
 const HomeContent = () => {
     return (
@@ -153,6 +154,8 @@ const HomeContent = () => {
                     <button className="normal">Send now</button>
                 </div>
             </section>
+
+            <Footer></Footer>
 
 
 
